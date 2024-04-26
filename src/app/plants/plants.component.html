@@ -7,8 +7,10 @@
       <img src="../../assets/image 2.png" class="banner" />
     </div>
     <hr>
+  </div>
+  <div class="row">
     <div class="col-12">
-      <table class="table" *ngIf="plants.length > 0">
+      <table class="table table-responsive" *ngIf="plants.length > 0">
         <thead class="table-dark">
           <tr>
             <th>#</th>
@@ -26,6 +28,12 @@
           </tr>
         </tbody>
       </table>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p class="m-0">Total plantas de interior: {{ interiorPlants }}</p>
+      <p>Total plantas de exterior: {{ exteriorPlants }}</p>
     </div>
   </div>
 </div>
